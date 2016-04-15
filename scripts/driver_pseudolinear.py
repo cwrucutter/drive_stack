@@ -214,6 +214,7 @@ class PseudoLinearDriver(driver.Driver):
         initial_twist.linear.x = 0.0
         initial_twist.angular.z = 0.0
 
+        '''
         for i in range(0, int(steps)):
             if i < steps / 4:
                 initial_twist.linear.x += increment
@@ -224,7 +225,8 @@ class PseudoLinearDriver(driver.Driver):
             rt.sleep()
 
         self.cmd_vel.publish(initial_twist)
-        
+        '''
+
         self.state = 'running'
         rospy.loginfo('state: '+str(self.state))
         
