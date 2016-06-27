@@ -64,6 +64,36 @@ class Path(object):
             # out
             self.path.append(easy_Odom(x=0.5, y=0, v=0.0, heading=0.0, frame='map'))
 
+        # Figure-8 for x:8m x y:6m box. (forms a 6m-8m-10m right triangle) 
+        elif triple == 'f8_8x6':
+            # Start in middle facing top left beacon (8mx6m point)
+            self.path.append(easy_Odom(x=4.0000, y=3.0000, v=0.5, heading= 0.6458, frame='map'))
+            # Draw partial CW circle with 1.5m radius on right
+            self.path.append(easy_Odom(x=5.6000, y=4.2000, v=0.5, heading= 0.6458, frame='map'))
+            self.path.append(easy_Odom(x=6.3653, y=4.4939, v=0.5, heading= 0.0873, frame='map'))
+            self.path.append(easy_Odom(x=7.1708, y=4.3416, v=0.5, heading=-0.4712, frame='map'))
+            self.path.append(easy_Odom(x=7.7760, y=3.7886, v=0.5, heading=-1.0123, frame='map'))
+            self.path.append(easy_Odom(x=8.0000, y=3.0000, v=0.5, heading=-1.5708, frame='map'))
+            self.path.append(easy_Odom(x=7.7760, y=2.2114, v=0.5, heading=-2.1293, frame='map'))
+            self.path.append(easy_Odom(x=7.1708, y=1.6584, v=0.5, heading=-2.6704, frame='map'))
+            self.path.append(easy_Odom(x=6.3653, y=1.5061, v=0.5, heading= 3.0543, frame='map'))
+            self.path.append(easy_Odom(x=5.6000, y=1.8000, v=0.5, heading= 2.4958, frame='map'))
+            # Done with partial CW circle on right -> go back to middle
+            self.path.append(easy_Odom(x=4.0000, y=3.0000, v=0.5, heading= 2.4958, frame='map'))
+            # Draw partial CCW circle with 1.5m radius on left
+            self.path.append(easy_Odom(x=2.4000, y=4.2000, v=0.5, heading= 2.4958, frame='map'))
+            self.path.append(easy_Odom(x=1.6347, y=4.4939, v=0.5, heading= 3.0543, frame='map'))
+            self.path.append(easy_Odom(x=0.8292, y=4.3416, v=0.5, heading=-2.6704, frame='map'))
+            self.path.append(easy_Odom(x=0.2240, y=3.7886, v=0.5, heading=-2.1293, frame='map'))
+            self.path.append(easy_Odom(x=0.0000, y=3.0000, v=0.5, heading=-1.5708, frame='map'))
+            self.path.append(easy_Odom(x=0.2240, y=2.2114, v=0.5, heading=-1.0123, frame='map'))
+            self.path.append(easy_Odom(x=0.8292, y=1.6584, v=0.5, heading=-0.4712, frame='map'))
+            self.path.append(easy_Odom(x=1.6347, y=1.5061, v=0.5, heading= 0.0873, frame='map'))
+            self.path.append(easy_Odom(x=2.4000, y=1.8000, v=0.5, heading= 0.6458, frame='map'))
+            # Done with partial CCW circle on left -> go back to middle
+            self.path.append(easy_Odom(x=4.0000, y=3.0000, v=0.5, heading= 0.6458, frame='map'))
+            # Stop
+            
         # Figure-8 for ShowCASE Demo
         elif triple == 'figure_eight':
             # CW Circle
@@ -507,5 +537,5 @@ class Path(object):
 
 if __name__ == '__main__':
     # pylint: disable=invalid-name
-    path = Path('figure_eight')
+    path = Path('f8_8x6')
     path.run_server()
