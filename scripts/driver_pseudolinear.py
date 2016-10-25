@@ -203,7 +203,7 @@ class PseudoLinearDriver(driver.Driver):
         """
         self.wait_for_services()
         self.init_node()
-        self.position = rospy.Subscriber('/base_pose_ground_truth', Odometry, self.process_position)
+        self.position = rospy.Subscriber('/odom_map', Odometry, self.process_position)
         rospy.loginfo('driver: node ready')
         rate = 20
         steps = int(rate*5.0)
