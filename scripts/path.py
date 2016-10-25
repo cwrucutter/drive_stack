@@ -96,18 +96,118 @@ class Path(object):
             
         # Figure-8 for ShowCASE Demo
         elif triple == 'figure_eight':
-            # start
-            self.path.append(easy_Odom(x=4.0, y=2.0, v=0.5, heading=-pi/2.0, frame='map'))
-            self.path.append(easy_Odom(x=2.5, y=0.5, v=0.5, heading=pi, frame='map'))
-            self.path.append(easy_Odom(x=1.0, y=2.0, v=0.5, heading=pi/2.0, frame='map'))
-            self.path.append(easy_Odom(x=2.5, y=3.5, v=0.5, heading=0.0, frame='map'))
-            # back to start
-            self.path.append(easy_Odom(x=4.0, y=2.0, v=0.5, heading=-pi/2.0, frame='map'))
-            self.path.append(easy_Odom(x=5.5, y=0.5, v=0.5, heading=0.0, frame='map'))
-            self.path.append(easy_Odom(x=7.0, y=2.0, v=0.5, heading=pi/2.0, frame='map'))
-            self.path.append(easy_Odom(x=5.5, y=3.5, v=0.5, heading=pi, frame='map'))
+            # CW Circle
+            self.path.append(easy_Odom(x=4.0, y=1.5, v=0.5, heading=-pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=2.75, y=0.25, v=0.5, heading=pi, frame='map'))
+            self.path.append(easy_Odom(x=1.5, y=1.5, v=0.5, heading=pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=2.75, y=2.75, v=0.5, heading=0.0, frame='map'))
+            # CCW Circle
+            self.path.append(easy_Odom(x=4.0, y=1.5, v=0.5, heading=-pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=5.25, y=0.25, v=0.5, heading=0.0, frame='map'))
+            self.path.append(easy_Odom(x=6.5, y=1.5, v=0.5, heading=pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=5.25, y=2.75, v=0.5, heading=pi, frame='map'))
+            # CW Circle
+            self.path.append(easy_Odom(x=4.0, y=1.5, v=0.5, heading=-pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=2.75, y=0.25, v=0.5, heading=pi, frame='map'))
+            self.path.append(easy_Odom(x=1.5, y=1.5, v=0.5, heading=pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=2.75, y=2.75, v=0.5, heading=0.0, frame='map'))
+            # CCW Circle
+            self.path.append(easy_Odom(x=4.0, y=1.5, v=0.5, heading=-pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=5.25, y=0.25, v=0.5, heading=0.0, frame='map'))
+            self.path.append(easy_Odom(x=6.5, y=1.5, v=0.5, heading=pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=5.25, y=2.75, v=0.5, heading=pi, frame='map'))
+            # CW Circle
+            self.path.append(easy_Odom(x=4.0, y=1.5, v=0.5, heading=-pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=2.75, y=0.25, v=0.5, heading=pi, frame='map'))
+            self.path.append(easy_Odom(x=1.5, y=1.5, v=0.5, heading=pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=2.75, y=2.75, v=0.5, heading=0.0, frame='map'))
+            # CCW Circle
+            self.path.append(easy_Odom(x=4.0, y=1.5, v=0.5, heading=-pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=5.25, y=0.25, v=0.5, heading=0.0, frame='map'))
+            self.path.append(easy_Odom(x=6.5, y=1.5, v=0.5, heading=pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=5.25, y=2.75, v=0.5, heading=pi, frame='map'))
+            # CW Circle
+            self.path.append(easy_Odom(x=4.0, y=1.5, v=0.5, heading=-pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=2.75, y=0.25, v=0.5, heading=pi, frame='map'))
+            self.path.append(easy_Odom(x=1.5, y=1.5, v=0.5, heading=pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=2.75, y=2.75, v=0.5, heading=0.0, frame='map'))
+            # CCW Circle
+            self.path.append(easy_Odom(x=4.0, y=1.5, v=0.5, heading=-pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=5.25, y=0.25, v=0.5, heading=0.0, frame='map'))
+            self.path.append(easy_Odom(x=6.5, y=1.5, v=0.5, heading=pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=5.25, y=2.75, v=0.5, heading=pi, frame='map'))
+            # CW Circle
+            self.path.append(easy_Odom(x=4.0, y=1.5, v=0.5, heading=-pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=2.75, y=0.25, v=0.5, heading=pi, frame='map'))
+            self.path.append(easy_Odom(x=1.5, y=1.5, v=0.5, heading=pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=2.75, y=2.75, v=0.5, heading=0.0, frame='map'))
+            # CCW Circle
+            self.path.append(easy_Odom(x=4.0, y=1.5, v=0.5, heading=-pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=5.25, y=0.25, v=0.5, heading=0.0, frame='map'))
+            self.path.append(easy_Odom(x=6.5, y=1.5, v=0.5, heading=pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=5.25, y=2.75, v=0.5, heading=pi, frame='map'))
+            # CW Circle
+            self.path.append(easy_Odom(x=4.0, y=1.5, v=0.5, heading=-pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=2.75, y=0.25, v=0.5, heading=pi, frame='map'))
+            self.path.append(easy_Odom(x=1.5, y=1.5, v=0.5, heading=pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=2.75, y=2.75, v=0.5, heading=0.0, frame='map'))
+            # CCW Circle
+            self.path.append(easy_Odom(x=4.0, y=1.5, v=0.5, heading=-pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=5.25, y=0.25, v=0.5, heading=0.0, frame='map'))
+            self.path.append(easy_Odom(x=6.5, y=1.5, v=0.5, heading=pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=5.25, y=2.75, v=0.5, heading=pi, frame='map'))
+            # CW Circle
+            self.path.append(easy_Odom(x=4.0, y=1.5, v=0.5, heading=-pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=2.75, y=0.25, v=0.5, heading=pi, frame='map'))
+            self.path.append(easy_Odom(x=1.5, y=1.5, v=0.5, heading=pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=2.75, y=2.75, v=0.5, heading=0.0, frame='map'))
+            # CCW Circle
+            self.path.append(easy_Odom(x=4.0, y=1.5, v=0.5, heading=-pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=5.25, y=0.25, v=0.5, heading=0.0, frame='map'))
+            self.path.append(easy_Odom(x=6.5, y=1.5, v=0.5, heading=pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=5.25, y=2.75, v=0.5, heading=pi, frame='map'))
+            # CW Circle
+            self.path.append(easy_Odom(x=4.0, y=1.5, v=0.5, heading=-pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=2.75, y=0.25, v=0.5, heading=pi, frame='map'))
+            self.path.append(easy_Odom(x=1.5, y=1.5, v=0.5, heading=pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=2.75, y=2.75, v=0.5, heading=0.0, frame='map'))
+            # CCW Circle
+            self.path.append(easy_Odom(x=4.0, y=1.5, v=0.5, heading=-pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=5.25, y=0.25, v=0.5, heading=0.0, frame='map'))
+            self.path.append(easy_Odom(x=6.5, y=1.5, v=0.5, heading=pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=5.25, y=2.75, v=0.5, heading=pi, frame='map'))
+            # CW Circle
+            self.path.append(easy_Odom(x=4.0, y=1.5, v=0.5, heading=-pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=2.75, y=0.25, v=0.5, heading=pi, frame='map'))
+            self.path.append(easy_Odom(x=1.5, y=1.5, v=0.5, heading=pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=2.75, y=2.75, v=0.5, heading=0.0, frame='map'))
+            # CCW Circle
+            self.path.append(easy_Odom(x=4.0, y=1.5, v=0.5, heading=-pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=5.25, y=0.25, v=0.5, heading=0.0, frame='map'))
+            self.path.append(easy_Odom(x=6.5, y=1.5, v=0.5, heading=pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=5.25, y=2.75, v=0.5, heading=pi, frame='map'))
+            # CW Circle
+            self.path.append(easy_Odom(x=4.0, y=1.5, v=0.5, heading=-pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=2.75, y=0.25, v=0.5, heading=pi, frame='map'))
+            self.path.append(easy_Odom(x=1.5, y=1.5, v=0.5, heading=pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=2.75, y=2.75, v=0.5, heading=0.0, frame='map'))
+            # CCW Circle
+            self.path.append(easy_Odom(x=4.0, y=1.5, v=0.5, heading=-pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=5.25, y=0.25, v=0.5, heading=0.0, frame='map'))
+            self.path.append(easy_Odom(x=6.5, y=1.5, v=0.5, heading=pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=5.25, y=2.75, v=0.5, heading=pi, frame='map'))
+            # CW Circle
+            self.path.append(easy_Odom(x=4.0, y=1.5, v=0.5, heading=-pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=2.75, y=0.25, v=0.5, heading=pi, frame='map'))
+            self.path.append(easy_Odom(x=1.5, y=1.5, v=0.5, heading=pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=2.75, y=2.75, v=0.5, heading=0.0, frame='map'))
+            # CCW Circle
+            self.path.append(easy_Odom(x=4.0, y=1.5, v=0.5, heading=-pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=5.25, y=0.25, v=0.5, heading=0.0, frame='map'))
+            self.path.append(easy_Odom(x=6.5, y=1.5, v=0.5, heading=pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=5.25, y=2.75, v=0.5, heading=pi, frame='map'))
             #back to start
-            self.path.append(easy_Odom(x=4.0, y=2.0, v=0.5, heading=-pi/2.0, frame='map'))
+            self.path.append(easy_Odom(x=4.0, y=1.5, v=0.5, heading=-pi/2.0, frame='map'))
 
         elif triple == 'roltatedI':
             # start
