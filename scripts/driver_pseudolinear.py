@@ -79,7 +79,7 @@ class PseudoLinearDriver(driver.Driver):
         twist_out = Twist()
         twist_out.linear.x = linear_vel
         twist_out.angular.z = angular_vel
-        rospy.loginfo('lin: '+str(linear_vel)+' ang: '+str(angular_vel))
+        # rospy.loginfo('lin: '+str(linear_vel)+' ang: '+str(angular_vel))
 
         if math.isnan(linear_vel) or math.isnan(angular_vel):
             linear_vel = 0
@@ -139,7 +139,7 @@ class PseudoLinearDriver(driver.Driver):
         scaling_factor = (self.max_omega - (abs(angular_vel) - .1))/(self.max_omega)
         scaling_factor = min(1, max(scaling_factor , 0))
         # scaling_factor = 1
-        rospy.loginfo('s: %f g: %f' % (scaling_factor, goal_vel,))
+        # rospy.loginfo('s: %f g: %f' % (scaling_factor, goal_vel,))
         linear_vel = goal_vel*scaling_factor
 
         florence = .15
@@ -204,7 +204,7 @@ class PseudoLinearDriver(driver.Driver):
         self.wait_for_services()
         self.init_node()
         self.position = rospy.Subscriber('/odom_map', Odometry, self.process_position)
-        rospy.loginfo('driver: node ready')
+        # rospy.loginfo('driver: node ready')
         rate = 20
         steps = int(rate*5.0)
         top_speed = 0.25
@@ -229,7 +229,7 @@ class PseudoLinearDriver(driver.Driver):
         '''
 
         self.state = 'running'
-        rospy.loginfo('state: '+str(self.state))
+        # rospy.loginfo('state: '+str(self.state))
         
         rospy.spin()
 
