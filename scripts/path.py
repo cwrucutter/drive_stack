@@ -93,7 +93,36 @@ class Path(object):
             # Done with partial CCW circle on left -> go back to middle
             self.path.append(easy_Odom(x=4.0000, y=3.0000, v=0.5, heading= 0.6458, frame='map'))
             # Stop
-            
+        elif triple == 'I-2017-01-28':
+            # start
+            self.path.append(easy_Odom(x=1.75, y=2, v=0.5, heading=pi/2, frame='map'))
+            # offset
+            self.path.append(easy_Odom(x=1.75, y=3, v=0.5, heading=pi/2, frame='map'))
+            # out to obstacle
+            self.path.append(easy_Odom(x=1.75, y=10.2, v=0.5, heading=pi/2, frame='map'))
+            # around obs 1
+            self.path.append(easy_Odom(x=1.5, y=11.0, v=0.5, heading=5*pi/8, frame='map'))
+            # around obs 2
+            self.path.append(easy_Odom(x=1.5, y=12.0, v=0.5, heading=pi/4, frame='map'))
+            # top round off
+            self.path.append(easy_Odom(x=2.0, y=12.5, v=0.5, heading=0, frame='map'))
+            # around obs 3
+            self.path.append(easy_Odom(x=2.5, y=12.0, v=0.5, heading=-pi/4, frame='map'))
+            # around obs 4
+            self.path.append(easy_Odom(x=2.5, y=11.0, v=0.5, heading=-5*pi/8, frame='map'))
+            # back from obstacle
+            self.path.append(easy_Odom(x=2.25, y=10.2, v=0.5, heading=-pi/2, frame='map'))
+            # back
+            self.path.append(easy_Odom(x=2.25, y=2, v=0.5, heading=-pi/2, frame='map'))
+            # turn 1
+            self.path.append(easy_Odom(x=2.5, y=1.5, v=0.5, heading=-pi/2, frame='map'))
+            # turn 2
+            self.path.append(easy_Odom(x=2, y=1, v=0.5, heading=pi, frame='map'))
+            # turn 3
+            self.path.append(easy_Odom(x=1.5, y=1.5, v=0.5, heading=pi/2, frame='map'))
+            # back to start
+            # self.path.append(easy_Odom(x=1.75, y=2, v=0.5, heading=pi/2, frame='map'))
+
         # Figure-8 for ShowCASE Demo
         elif triple == 'figure_eight':
             # CW Circle
@@ -546,5 +575,5 @@ class Path(object):
 if __name__ == '__main__':
     # pylint: disable=invalid-name
     # path = Path('figure_eight')
-    path = Path('I')
+    path = Path('I-2017-01-28')
     path.run_server()
