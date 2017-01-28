@@ -123,6 +123,28 @@ class Path(object):
             # back to start
             # self.path.append(easy_Odom(x=1.75, y=2, v=0.5, heading=pi/2, frame='map'))
 
+        elif triple == 'coop':
+            # start
+            self.path.append(easy_Odom(x=1.75, y=2, v=0.5, heading=pi/2, frame='map'))
+            # offset
+            self.path.append(easy_Odom(x=1.75, y=3, v=0.5, heading=pi/2, frame='map'))
+            # out to obstacle
+            self.path.append(easy_Odom(x=1.75, y=4.5, v=0.5, heading=pi/2, frame='map'))
+            # around obs 1
+            self.path.append(easy_Odom(x=1.5, y=5.5, v=0.5, heading=5*pi/8, frame='map'))
+            # around obs 2
+            self.path.append(easy_Odom(x=1.5, y=6.0, v=0.5, heading=pi/4, frame='map'))
+            # top round off
+            self.path.append(easy_Odom(x=2.0, y=6.5, v=0.5, heading=0, frame='map'))
+            # around obs 3
+            self.path.append(easy_Odom(x=2.5, y=6.0, v=0.5, heading=-pi/2, frame='map'))
+            # around obs 4
+            self.path.append(easy_Odom(x=2.5, y=5.5, v=0.5, heading=-5*pi/8, frame='map'))
+            # back from obstacle
+            self.path.append(easy_Odom(x=2.25, y=4.5, v=0.5, heading=-pi/2, frame='map'))
+            # back
+            self.path.append(easy_Odom(x=2.25, y=1.5, v=0.5, heading=-pi/2, frame='map'))
+
         # Figure-8 for ShowCASE Demo
         elif triple == 'figure_eight':
             # CW Circle
@@ -575,5 +597,5 @@ class Path(object):
 if __name__ == '__main__':
     # pylint: disable=invalid-name
     # path = Path('figure_eight')
-    path = Path('I-2017-01-28')
+    path = Path('coop')
     path.run_server()
