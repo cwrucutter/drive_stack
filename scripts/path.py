@@ -56,6 +56,8 @@ class Path(object):
     # These attributes represent the path, frame, and pub/sub
 
     def __init__(self, triple='simple'):
+        self.MAX_SPEED = rospy.get_param('~max_speed', 0.5)
+        print('MAX_SPEED = ' + str(self.MAX_SPEED))
 
         self.path = []
         if triple == 'simple':
@@ -64,7 +66,7 @@ class Path(object):
             # out
             self.path.append(easy_Odom(x=0.5, y=0, v=0.0, heading=0.0, frame='map'))
 
-        # Figure-8 for x:8m x y:6m box. (forms a 6m-8m-10m right triangle) 
+        # Figure-8 for x:8m x y:6m box. (forms a 6m-8m-10m right triangle)
         elif triple == 'f8_8x6':
             # Start in middle facing top left beacon (8mx6m point)
             self.path.append(easy_Odom(x=4.0000, y=3.0000, v=0.5, heading= 0.6458, frame='map'))
@@ -93,6 +95,7 @@ class Path(object):
             # Done with partial CCW circle on left -> go back to middle
             self.path.append(easy_Odom(x=4.0000, y=3.0000, v=0.5, heading= 0.6458, frame='map'))
             # Stop
+
         elif triple == 'I-2017-01-28':
             # start
             self.path.append(easy_Odom(x=1.75, y=2, v=0.5, heading=pi/2, frame='map'))
@@ -122,6 +125,56 @@ class Path(object):
             self.path.append(easy_Odom(x=1.5, y=1.5, v=0.5, heading=pi/2, frame='map'))
             # back to start
             # self.path.append(easy_Odom(x=1.75, y=2, v=0.5, heading=pi/2, frame='map'))
+
+        elif triple == 'III-2017-01-29':
+            # 01 - outside left - begin
+            self.path.append(easy_Odom(x=2.375, y=1.5, v=self.MAX_SPEED, heading=pi/2, frame='map'))
+            # 01 - outside left - end
+            self.path.append(easy_Odom(x=2.375, y=12.0, v=self.MAX_SPEED, heading=pi/2, frame='map'))
+            # 01 to 02 - turn
+            self.path.append(easy_Odom(x=3.5, y=13.25, v=self.MAX_SPEED, heading=0.0, frame='map'))
+            # 02 - outside right - begin
+            self.path.append(easy_Odom(x=4.625, y=12.0, v=self.MAX_SPEED, heading=-pi/2, frame='map'))
+            # 02 - outside right - end
+            self.path.append(easy_Odom(x=4.625, y=3.0, v=self.MAX_SPEED, heading=-pi/2, frame='map'))
+            # 02 to 03 - turn
+            self.path.append(easy_Odom(x=3.875, y=2.25, v=self.MAX_SPEED, heading=-pi, frame='map'))
+            # 03 - inside left - begin
+            self.path.append(easy_Odom(x=3.125, y=3.0, v=self.MAX_SPEED, heading=pi/2, frame='map'))
+            # 03 - inside left - end
+            self.path.append(easy_Odom(x=3.125, y=11.5, v=self.MAX_SPEED, heading=pi/2, frame='map'))
+            # 03 to 04 - turn 1
+            self.path.append(easy_Odom(x=2.8125, y=12.0, v=self.MAX_SPEED, heading=3*pi/4, frame='map'))
+            # 03 to 04 - turn 2
+            self.path.append(easy_Odom(x=2.5, y=12.5, v=self.MAX_SPEED, heading=pi/2, frame='map'))
+            # 03 to 04 - turn 3
+            self.path.append(easy_Odom(x=3.0, y=13.0, v=self.MAX_SPEED, heading=pi/4, frame='map'))
+            # 03 to 04 - turn 4
+            self.path.append(easy_Odom(x=3.5, y=13.5, v=self.MAX_SPEED, heading=0.0, frame='map'))
+            # 03 to 04 - turn 5
+            self.path.append(easy_Odom(x=4.0, y=13.0, v=self.MAX_SPEED, heading=-pi/4, frame='map'))
+            # 03 to 04 - turn 6
+            self.path.append(easy_Odom(x=4.5, y=12.5, v=self.MAX_SPEED, heading=-pi/2, frame='map'))
+            # 03 to 04 - turn 7
+            self.path.append(easy_Odom(x=4.1875, y=12.0, v=self.MAX_SPEED, heading=-3*pi/4, frame='map'))
+            # 04 - inside right - begin
+            self.path.append(easy_Odom(x=3.875, y=11.5, v=self.MAX_SPEED, heading=-pi/2, frame='map'))
+            # 04 - inside right - end
+            self.path.append(easy_Odom(x=3.875, y=3.0, v=self.MAX_SPEED, heading=-pi/2, frame='map'))
+            # 04 to 05 - turn
+            self.path.append(easy_Odom(x=3.125, y=2.25, v=self.MAX_SPEED, heading=-pi, frame='map'))
+            # 05 - outside left - begin
+            self.path.append(easy_Odom(x=2.375, y=3.0, v=self.MAX_SPEED, heading=pi/2, frame='map'))
+            # 05 - outside left - end
+            self.path.append(easy_Odom(x=2.375, y=12.0, v=self.MAX_SPEED, heading=pi/2, frame='map'))
+            # 05 to 06 - turn
+            self.path.append(easy_Odom(x=3.5, y=13.25, v=self.MAX_SPEED, heading=0.0, frame='map'))
+            # 06 - outside right - begin
+            self.path.append(easy_Odom(x=4.625, y=12.0, v=self.MAX_SPEED, heading=-pi/2, frame='map'))
+            # 06 - outside right - end
+            self.path.append(easy_Odom(x=4.625, y=3.0, v=self.MAX_SPEED, heading=-pi/2, frame='map'))
+            # 06 - finish in garage
+            self.path.append(easy_Odom(x=2.0, y=2.0, v=self.MAX_SPEED, heading=-pi, frame='map'))
 
         elif triple == 'coop':
             # start
@@ -597,5 +650,5 @@ class Path(object):
 if __name__ == '__main__':
     # pylint: disable=invalid-name
     # path = Path('figure_eight')
-    path = Path('coop')
+    path = Path('III-2017-01-29')
     path.run_server()
