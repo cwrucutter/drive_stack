@@ -137,7 +137,7 @@ class PseudoLinearDriver(driver.Driver):
         linear_vel = goal_vel
         
         scaling_factor = (self.max_omega - (abs(angular_vel) - .1))/(self.max_omega)
-        scaling_factor = min(1, max(scaling_factor , 0))
+        scaling_factor = min(1, max(scaling_factor , 0.3))
         # scaling_factor = 1
         # rospy.loginfo('s: %f g: %f' % (scaling_factor, goal_vel,))
         linear_vel = goal_vel*scaling_factor
