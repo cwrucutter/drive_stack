@@ -56,7 +56,7 @@ class Path(object):
     # These attributes represent the path, frame, and pub/sub
 
     def __init__(self, triple='simple'):
-        self.MAX_SPEED = rospy.get_param('~max_speed', 0.5)
+        self.MAX_SPEED = rospy.get_param('~max_speed', 1.0)
         print('MAX_SPEED = ' + str(self.MAX_SPEED))
 
         self.path = []
@@ -174,7 +174,7 @@ class Path(object):
             # 06 - outside right - end
             self.path.append(easy_Odom(x=4.625, y=3.0, v=self.MAX_SPEED, heading=-pi/2, frame='map'))
             # 06 - finish in garage
-            self.path.append(easy_Odom(x=2.0, y=2.0, v=self.MAX_SPEED, heading=-pi, frame='map'))
+            self.path.append(easy_Odom(x=3.0, y=2.0, v=self.MAX_SPEED, heading=-pi, frame='map'))
 
         elif triple == 'coop':
             # start
