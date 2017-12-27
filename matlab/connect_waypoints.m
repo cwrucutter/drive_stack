@@ -1,4 +1,4 @@
-function [X,P] = connect_waypoints(xPre,thetaPre,vPre,xTarg,thetaTarg,vTarg,dt)
+function [X,V,A,P] = connect_waypoints(xPre,thetaPre,vPre,xTarg,thetaTarg,vTarg,dt)
 % First make sure all the inputs are the correct size
 if ~isequal(size(xPre),[2 1]) && ~isequal(size(xPre),[1 2])
     disp("xPre is not the correct size. It should be 2x1 or 1x2.")
@@ -38,5 +38,5 @@ if transpose
     P = P';
 end
 
-X = bezier(P,dt);
+[X,V,A] = bezier(P,dt);
 end
