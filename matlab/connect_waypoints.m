@@ -28,8 +28,11 @@ if isequal(size(xPre),[2 1])
     xPre = xPre';
     xTarg = xTarg';
 end
-x1 = [xPre(1)+vPre*cos(thetaPre) xPre(2)+vPre*sin(thetaPre)];
-x2 = [xTarg(1)-vTarg*cos(thetaTarg) xTarg(2)+vTarg*sin(thetaTarg)];
+
+% Divide by three to make the velocity calculated below the same as vPre
+% and vTarg. Not sure why this is. But, it works!
+x1 = [xPre(1) + vPre*cos(thetaPre)/3 xPre(2) + vPre*sin(thetaPre)/3];
+x2 = [xTarg(1) - vTarg*cos(thetaTarg)/3 xTarg(2) - vTarg*sin(thetaTarg)/3];
 
 P = [xPre;x1;x2;xTarg];
 
