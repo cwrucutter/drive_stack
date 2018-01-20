@@ -1,2 +1,9 @@
 ---
 nav_msgs/Odometry goal
+int8 direction
+float64 dist_tolerance
+float64 angle_tolerance
+
+int8 FORWARD=1
+int8 REVERSE=-1
+int8 STOP=0
