@@ -30,17 +30,14 @@ class BezierLeader(leader.Leader):
 
     def generate_next_path(self):
         """
-        generate a new path, either forwards or backwards (rvs == True)
+        generate a new path
         """
         end = self.path_next().goal
         start = self.path_start().goal
 
         self.targets = self.connect_waypoints(start, end, 21)
 
-        if rvs:
-            self.index = len(self.targets)-2
-        else:
-            self.index = 0
+        self.index = 0
 
     def connect_waypoints(self, start, end, N, plot=False):
         pt0 = [start.pose.pose.position.x,
