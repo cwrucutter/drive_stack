@@ -48,6 +48,7 @@ class Leader(object):
     # there are only 4 non-pub/sub related attributes
 
     def __init__(self):
+        rospy.init_node('default_leader')
 
         self.targets = []
         self.frame = 'map'
@@ -168,7 +169,6 @@ class Leader(object):
         """
         Run the ROS node
         """
-        rospy.init_node('default_leader')
         self.wait_for_services()
         self.generate_initial_path()
         

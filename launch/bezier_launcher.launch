@@ -1,0 +1,20 @@
+<launch>
+
+  <!-- get the path from the command line or another launch file -->
+  <arg name="path" />
+  <!-- We sometimes want to remap the cmd_vel output to another topic to be processed by something like a obstacle avoidance node. -->
+  <arg name="cmd_vel_topic" default="cmd_vel" />
+
+  <!-- Launch the path, leader, and driver for navigation. -->
+  <node pkg="drive_stack" type="path.py" name="path" output="screen">
+    <param name="max_speed" value="2.0" type="double"/>
+    <rosparam command="load" file="$(find drive_stack)/paths/$(arg path).yaml" />
+  </node>
+
+  <node pkg="drive_stack" type="leader_bezier.py" name="leader" output="screen"/>
+
+  <node pkg="drive_stack" type="driver_pseudolinear.py" name="driver" output="screen">
+    <remap from="cmd_vel" to="$(arg cmd_vel_topic)"/>
+  </node>
+
+</launch>
