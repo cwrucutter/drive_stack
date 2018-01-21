@@ -64,56 +64,6 @@
             # back to start
             # self.path.append(easy_Odom(x=1.75, y=2, v=0.5, heading=pi/2, frame='map'))
 
-        elif triple == 'III-2017-01-29':
-            # 01 - outside left - begin
-            self.path.append(easy_Odom(x=2.375, y=1.5, v=self.MAX_SPEED, heading=pi/2, frame='map'))
-            # 01 - outside left - end
-            self.path.append(easy_Odom(x=2.375, y=12.0, v=self.MAX_SPEED, heading=pi/2, frame='map'))
-            # 01 to 02 - turn
-            self.path.append(easy_Odom(x=3.5, y=13.25, v=self.MAX_SPEED, heading=0.0, frame='map'))
-            # 02 - outside right - begin
-            self.path.append(easy_Odom(x=4.625, y=12.0, v=self.MAX_SPEED, heading=-pi/2, frame='map'))
-            # 02 - outside right - end
-            self.path.append(easy_Odom(x=4.625, y=3.0, v=self.MAX_SPEED, heading=-pi/2, frame='map'))
-            # 02 to 03 - turn
-            self.path.append(easy_Odom(x=3.875, y=2.25, v=self.MAX_SPEED, heading=-pi, frame='map'))
-            # 03 - inside left - begin
-            self.path.append(easy_Odom(x=3.125, y=3.0, v=self.MAX_SPEED, heading=pi/2, frame='map'))
-            # 03 - inside left - end
-            self.path.append(easy_Odom(x=3.125, y=11.5, v=self.MAX_SPEED, heading=pi/2, frame='map'))
-            # 03 to 04 - turn 1
-            self.path.append(easy_Odom(x=2.8125, y=12.0, v=self.MAX_SPEED, heading=3*pi/4, frame='map'))
-            # 03 to 04 - turn 2
-            self.path.append(easy_Odom(x=2.5, y=12.5, v=self.MAX_SPEED, heading=pi/2, frame='map'))
-            # 03 to 04 - turn 3
-            self.path.append(easy_Odom(x=3.0, y=13.0, v=self.MAX_SPEED, heading=pi/4, frame='map'))
-            # 03 to 04 - turn 4
-            self.path.append(easy_Odom(x=3.5, y=13.5, v=self.MAX_SPEED, heading=0.0, frame='map'))
-            # 03 to 04 - turn 5
-            self.path.append(easy_Odom(x=4.0, y=13.0, v=self.MAX_SPEED, heading=-pi/4, frame='map'))
-            # 03 to 04 - turn 6
-            self.path.append(easy_Odom(x=4.5, y=12.5, v=self.MAX_SPEED, heading=-pi/2, frame='map'))
-            # 03 to 04 - turn 7
-            self.path.append(easy_Odom(x=4.1875, y=12.0, v=self.MAX_SPEED, heading=-3*pi/4, frame='map'))
-            # 04 - inside right - begin
-            self.path.append(easy_Odom(x=3.875, y=11.5, v=self.MAX_SPEED, heading=-pi/2, frame='map'))
-            # 04 - inside right - end
-            self.path.append(easy_Odom(x=3.875, y=3.0, v=self.MAX_SPEED, heading=-pi/2, frame='map'))
-            # 04 to 05 - turn
-            self.path.append(easy_Odom(x=3.125, y=2.25, v=self.MAX_SPEED, heading=-pi, frame='map'))
-            # 05 - outside left - begin
-            self.path.append(easy_Odom(x=2.375, y=3.0, v=self.MAX_SPEED, heading=pi/2, frame='map'))
-            # 05 - outside left - end
-            self.path.append(easy_Odom(x=2.375, y=12.0, v=self.MAX_SPEED, heading=pi/2, frame='map'))
-            # 05 to 06 - turn
-            self.path.append(easy_Odom(x=3.5, y=13.25, v=self.MAX_SPEED, heading=0.0, frame='map'))
-            # 06 - outside right - begin
-            self.path.append(easy_Odom(x=4.625, y=12.0, v=self.MAX_SPEED, heading=-pi/2, frame='map'))
-            # 06 - outside right - end
-            self.path.append(easy_Odom(x=4.625, y=3.0, v=self.MAX_SPEED, heading=-pi/2, frame='map'))
-            # 06 - finish in garage
-            self.path.append(easy_Odom(x=3.0, y=2.0, v=self.MAX_SPEED, heading=-pi, frame='map'))
-
         elif triple == 'coop':
             # start
             self.path.append(easy_Odom(x=1.75, y=2, v=0.5, heading=pi/2, frame='map'))
