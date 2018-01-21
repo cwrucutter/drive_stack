@@ -1,50 +1,49 @@
 waypoints:
-  # start
-  - {x: 3.25, y: 1, v: 0.5, heading: rad(pi/2), frame: map, direction: 1}
-  # start 2
-  - {x: 3.25, y: 2, v: 0.5, heading: rad(pi/2), frame: map, direction: 1}
-
-  # back and forth
-  # top left
-  - {x: 3.25, y: rad(13-3*0.7/2), v: 0.5, heading: rad(pi/2), frame: map, direction: 1}
-
-  # bubble
-  - {x: 3, y :  12.5, v: 0.5, heading: rad(pi/2), frame: map, direction: 1}
-  - {x: 3.5, y:  13, v: 0.5, heading: rad(0.0), frame: map, direction: 1}
-  - {x: 4, y :  12.5, v: 0.5, heading: rad(-pi/2), frame: map, direction: 1}
-
-  # top right
-  - {x: 3.75, y: rad(13-3*0.7/2), v: 0.5, heading: rad(-pi/2), frame: map, direction: 1}
-
-  # inside out spiral
-  # center back
-  - {x: 3.75, y: rad(3+0.7), v: 0.5, heading: rad(-pi/2), frame: map, direction: 1}
-  - {x: 3.75, y: rad(3+0.7/2), v: 0.5, heading: rad(pi), frame: map, direction: 1}
-
-  # left 1
-  - {x: rad(3.25-0.7), y: rad(3+0.7), v: 0.5, heading: rad(pi/2), frame: map, direction: 1}
-  - {x: rad(3.25-0.7), y: rad(13-3*0.7/2), v: 0.5, heading: rad(pi/2), frame: map, direction: 1}
-  # left 1 top
-  - {x: 3.5, y: rad(13-0.7/2), v: 0.5, heading: rad(0.0), frame: map, direction: 1}
-
-  # right 1
-  - {x: rad(3.75+0.7), y: rad(13-3*0.7/2), v: 0.5, heading: rad(-pi/2), frame: map, direction: 1}
-  - {x: rad(3.75+0.7), y: rad(3+3*0.7/2), v: 0.5, heading: rad(-pi/2), frame: map, direction: 1}
-  # right 1 bottom
-  - {x: 3.5, y: rad(3+0.7/2), v: 0.5, heading: rad(pi), frame: map, direction: 1}
-
-  # left 2
-  - {x: rad(3.25-0.7), y: rad(3+0.7/2), v: 0.5, heading: rad(pi), frame: map, direction: 1}
-  - {x: rad(3.25-2*0.7), y: rad(3+3*0.7/2), v: 0.5, heading: rad(pi/2), frame: map, direction: 1}
-  - {x: rad(3.25-2*0.7), y: rad(13-3*0.7/2), v: 0.5, heading: rad(pi/2), frame: map, direction: 1}
-  # left 2 top
-  - {x: rad(3.25-0.7), y: rad(13-0.7/2), v: 0.5, heading: rad(0.0), frame: map, direction: 1}
-  - {x: 3.5, y: rad(13-0.7/2), v: 0.5, heading: rad(0.0), frame: map, direction: 1}
-
-  # right 2
-  - {x: rad(3.75+2*0.7), y: rad(13-5*0.7/2), v: 0.5, heading: rad(-pi/2), frame: map, direction: 1}
-  - {x: rad(3.75+2*0.7), y: 2.0, v: 0.5, heading: rad(-pi/2), frame: map, direction: 1}
-
-  # garage
-  - {x: 4.5, y: 1, v: 0.5, heading: rad(pi), frame: map, direction: 1}
-  - {x: 3.0, y: 1, v: 0.5, heading: rad(pi), frame: map, direction: 1}
+  # 01 - outside left - begin
+  - {x: 2.375, y: 1.5, v: 2.0, heading: rad(pi/2), frame: map, direction: 1}
+  # 01 - outside left - end
+  - {x: 2.375, y: 12.0, v: 2.0, heading: rad(pi/2), frame: map, direction: 1}
+  # 01 to 02 - turn
+  - {x: 3.5, y: 13.25, v: 2.0, heading: rad(0.0), frame: map, direction: 1}
+  # 02 - outside right - begin
+  - {x: 4.625, y: 12.0, v: 2.0, heading: rad(-pi/2), frame: map, direction: 1}
+  # 02 - outside right - end
+  - {x: 4.625, y: 3.0, v: 2.0, heading: rad(-pi/2), frame: map, direction: 1}
+  # 02 to 03 - turn
+  - {x: 3.875, y: 2.25, v: 2.0, heading: rad(-pi), frame: map, direction: 1}
+  # 03 - inside left - begin
+  - {x: 3.125, y: 3.0, v: 2.0, heading: rad(pi/2), frame: map, direction: 1}
+  # 03 - inside left - end
+  - {x: 3.125, y: 11.5, v: 2.0, heading: rad(pi/2), frame: map, direction: 1}
+  # 03 to 04 - turn 1
+  - {x: 2.8125, y: 12.0, v: 2.0, heading: rad(3*pi/4), frame: map, direction: 1}
+  # 03 to 04 - turn 2
+  - {x: 2.5, y: 12.5, v: 2.0, heading: rad(pi/2), frame: map, direction: 1}
+  # 03 to 04 - turn 3
+  - {x: 3.0, y: 13.0, v: 2.0, heading: rad(pi/4), frame: map, direction: 1}
+  # 03 to 04 - turn 4
+  - {x: 3.5, y: 13.5, v: 2.0, heading: rad(0.0), frame: map, direction: 1}
+  # 03 to 04 - turn 5
+  - {x: 4.0, y: 13.0, v: 2.0, heading: rad(-pi/4), frame: map, direction: 1}
+  # 03 to 04 - turn 6
+  - {x: 4.5, y: 12.5, v: 2.0, heading: rad(-pi/2), frame: map, direction: 1}
+  # 03 to 04 - turn 7
+  - {x: 4.1875, y: 12.0, v: 2.0, heading: rad(-3*pi/4), frame: map, direction: 1}
+  # 04 - inside right - begin
+  - {x: 3.875, y: 11.5, v: 2.0, heading: rad(-pi/2), frame: map, direction: 1}
+  # 04 - inside right - end
+  - {x: 3.875, y: 3.0, v: 2.0, heading: rad(-pi/2), frame: map, direction: 1}
+  # 04 to 05 - turn
+  - {x: 3.125, y: 2.25, v: 2.0, heading: rad(-pi), frame: map, direction: 1}
+  # 05 - outside left - begin
+  - {x: 2.375, y: 3.0, v: 2.0, heading: rad(pi/2), frame: map, direction: 1}
+  # 05 - outside left - end
+  - {x: 2.375, y: 12.0, v: 2.0, heading: rad(pi/2), frame: map, direction: 1}
+  # 05 to 06 - turn
+  - {x: 3.5, y: 13.25, v: 2.0, heading: rad(0.0), frame: map, direction: 1}
+  # 06 - outside right - begin
+  - {x: 4.625, y: 12.0, v: 2.0, heading: rad(-pi/2), frame: map, direction: 1}
+  # 06 - outside right - end
+  - {x: 4.625, y: 3.0, v: 2.0, heading: rad(-pi/2), frame: map, direction: 1}
+  # 06 - finish in garage
+  - {x: 3.0, y: 2.0, v: 2.0, heading: rad(-pi), frame: map, direction: 1}
