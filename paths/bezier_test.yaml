@@ -1,5 +1,6 @@
 waypoints:
   # start
+  - {x: 2, y: 2, v: 0.5, heading: rad(pi/2), frame: map, direction: 1}
   - {x: 2, y: 4, v: 0.5, heading: rad(pi/2), frame: map, direction: 1}
   - {x: 3, y: 5, v: 0.5, heading: rad(0), frame: map, direction: 1}
   - {x: 4, y: 4, v: 0.5, heading: rad(-pi/2), frame: map, direction: 1}
