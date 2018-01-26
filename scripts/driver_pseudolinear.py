@@ -70,7 +70,7 @@ class PseudoLinearDriver(driver.Driver):
         along, off, heading = self.calc_errors(odom, next_goal)
         # rospy.loginfo('aoh'+ str( (along, off, heading)) )
 
-        angular_vel = self.calc_angular_velocity(off, heading, odom)
+        angular_vel = self.calc_angular_velocity(off, heading, odom, next_goal)
 
         linear_vel = self.calc_linear_velocity(along, off, angular_vel,
             next_goal.twist.twist.linear.x, odom)
@@ -117,7 +117,7 @@ class PseudoLinearDriver(driver.Driver):
         return adjusted_heading
 
 
-    def calc_angular_velocity(self, off, heading, odom):
+    def calc_angular_velocity(self, off, heading, odom, next_goal):
         extreme_case = False
         if extreme_case: # extreme case
             rospy.loginfo('extreme case')
@@ -129,8 +129,7 @@ class PseudoLinearDriver(driver.Driver):
             return_to_heading_gain = (2.0*abs(avg_gain))/(abs(relative_gain)+1)
             return_to_line_gain = abs(relative_gain)*return_to_heading_gain
 
-            ang_vel = -return_to_heading_gain*heading + -return_to_line_gain*off
-
+            ang_vel = next_goal.twist.twist.angular.z - return_to_heading_gain*heading  - return_to_line_gain*off
         return self.check_angular_limits(odom, ang_vel)
 
     def calc_linear_velocity(self, along, off, angular_vel, goal_vel, odom):
