@@ -1,0 +1,26 @@
+waypoints:
+  # single 'I':
+  # start
+  - {x: 1.75, y: 2, v: 0.5, heading: rad(pi/2), frame: 'map', direction: 1}
+  # offset
+  - {x: 1.75, y: 3, v: 0.5, heading: rad(pi/2), frame: 'map', direction: 1}
+  # out 1
+  - {x: 1.75, y: 13, v: 0.5, heading: rad(pi/2), frame: 'map', direction: 1}
+  # out 2
+  - {x: 1.5, y: 13.5, v: 0.5, heading: rad(pi/2), frame: 'map', direction: 1}
+  # over
+  - {x: 2, y: 14, v: 0.5, heading: rad(0.0), frame: 'map', direction: 1}
+  # turned around
+  - {x: 2.5, y: 13.5, v: 0.5, heading: rad(-pi/2), frame: 'map', direction: 1}
+  # back 1
+  - {x: 2.25, y: 13, v: 0.5, heading: rad(-pi/2), frame: 'map', direction: 1}
+  # back 2
+  - {x: 2.25, y: 2, v: 0.5, heading: rad(-pi/2), frame: 'map', direction: 1}
+  # turn 1
+  - {x: 2.5, y: 1.5, v: 0.5, heading: rad(-pi/2), frame: 'map', direction: 1}
+  # turn 2
+  - {x: 2, y: 1, v: 0.5, heading: rad(pi), frame: 'map', direction: 1}
+  # turn 3
+  - {x: 1.5, y: 1.5, v: 0.5, heading: rad(pi/2), frame: 'map', direction: 1}
+  # back to start
+  - {x: 1.75, y: 2, v: 0.0, heading: rad(pi/2), frame: 'map', direction: 0}
