@@ -24,7 +24,13 @@ class BezierLeader(leader.Leader):
         end = self.path_goal().goal # Odometry
         start = self.path_start().goal # Odometry
 
-        self.targets = self.connect_waypoints(start, end, 21)
+        # Try to get a leader point every 10 cm (assume a line)
+        spacing = 0.1 # meters
+        dist = math.sqrt(math.pow(end.pose.pose.position.x-start.pose.pose.position.x,2)+
+                         math.pow(end.pose.pose.position.y-start.pose.pose.position.y,2))
+        N = int(dist*(1/spacing)) + 1
+
+        self.targets = self.connect_waypoints(start, end, N)
 
         self.index = 0
 
@@ -35,7 +41,13 @@ class BezierLeader(leader.Leader):
         end = self.path_next().goal
         start = self.path_start().goal
 
-        self.targets = self.connect_waypoints(start, end, 21)
+        # Try to get a leader point every 10 cm (assume a line)
+        spacing = 0.1 # meters
+        dist = math.sqrt(math.pow(end.pose.pose.position.x-start.pose.pose.position.x,2)+
+                         math.pow(end.pose.pose.position.y-start.pose.pose.position.y,2))
+        N = int(dist*(1/spacing)) + 1
+
+        self.targets = self.connect_waypoints(start, end, N)
 
         self.index = 0
 
