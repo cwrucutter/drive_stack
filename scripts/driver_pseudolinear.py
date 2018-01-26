@@ -90,6 +90,7 @@ class PseudoLinearDriver(driver.Driver):
             rospy.loginfo('Error in driver calculation')
             sys.exit(0)
 
+        self.last_odom = next_goal
         self.cmd_vel.publish(twist_out)
 
     def calc_adjusted_heading(self, heading, off):
