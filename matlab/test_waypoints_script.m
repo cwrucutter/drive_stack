@@ -6,12 +6,12 @@ xTarg = rand(1,2);
 thetaTarg = 2*pi*rand-pi;
 vTarg = 2*rand;
 
-xPre = [0 0];
-thetaPre = 0;
-vPre = 2;
-xTarg = [1 2];
+xPre = [1.75 1.75];
+thetaPre = pi/2;
+vPre = 0.5;
+xTarg = [1.75 2.0];
 thetaTarg = pi/2;
-vTarg = 2;
+vTarg = 0.0;
 
 dt = 0.05;
 t = 0:dt:1;
@@ -36,9 +36,9 @@ figure(1)
 plot(X(:,1),X(:,2),'.r')
 hold on
 plot(P(:,1),P(:,2),'ok')
-xlim([-2 3])
-ylim([-2 3])
-axis square
+axis equal
+xlim([0 7])
+ylim([0 15])
 hold off
 
 figure(2)
