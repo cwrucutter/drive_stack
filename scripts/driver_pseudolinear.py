@@ -29,10 +29,10 @@ class PseudoLinearDriver(driver.Driver):
         super(PseudoLinearDriver, self).__init__()
         self.last_odom = None
 
-        self.max_accel = 1
-        self.max_v = .5
-        self.max_alpha = 1
-        self.max_omega = .5
+        self.max_accel = 1.0
+        self.max_v = 0.5
+        self.max_alpha = 1.0
+        self.max_omega = 2.0
 
         self.state = 'startup'
 
