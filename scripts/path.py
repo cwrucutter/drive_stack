@@ -85,7 +85,10 @@ class Path(object):
         """
         path = rospy.get_param('~waypoints')
         for p in path:
-            self.path.append({"goal": easy_Odom(x=p["x"], y=p["y"], v=p["v"], heading=p["heading"], frame=p["frame"]), "direction": p["direction"]})
+            if "v_curve" in p:
+                self.path.append({"goal": easy_Odom(x=p["x"], y=p["y"], v=p["v"], heading=p["heading"], frame=p["frame"]), "direction": p["direction"], "v_curve": p["v_curve"]})
+            else:
+                self.path.append({"goal": easy_Odom(x=p["x"], y=p["y"], v=p["v"], heading=p["heading"], frame=p["frame"]), "direction": p["direction"]})
 
 
     # Pub/Sub/Service functionality
@@ -98,7 +101,11 @@ class Path(object):
         direction = self.path[self.index+1]["direction"]
         dist_tolerance = 1.0
         angle_tolerance = 1.0
-        return GoalResponse(goal, direction, dist_tolerance, angle_tolerance)
+        if "v_curve" in self.path[self.index+1]:
+            v_curve = self.path[self.index+1]["v_curve"]
+        else:
+            v_curve = 0.0
+        return GoalResponse(goal, direction, dist_tolerance, angle_tolerance, v_curve)
 
     def next_callback(self, req=None):
         """
@@ -116,7 +123,11 @@ class Path(object):
         direction = self.path[self.index]["direction"]
         dist_tolerance = 1.0
         angle_tolerance = 1.0
-        return GoalResponse(goal, direction, dist_tolerance, angle_tolerance)
+        if "v_curve" in self.path[self.index+1]:
+            v_curve = self.path[self.index+1]["v_curve"]
+        else:
+            v_curve = 0.0
+        return GoalResponse(goal, direction, dist_tolerance, angle_tolerance, v_curve)
 
     def back_callback(self, req=None):
         """
