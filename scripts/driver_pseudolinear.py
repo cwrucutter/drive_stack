@@ -124,14 +124,17 @@ class PseudoLinearDriver(driver.Driver):
             rospy.loginfo('extreme case')
             ang_vel = 0.0 # TODO(buckbaskin): fix this
         else: # normal case
-            relative_gain = 1.5 # scales return_to_line_gain
-            avg_gain = 10.0
+            relative_gain = 1.1 # scales return_to_line_gain
+            avg_gain = 1.0
+            des_ang_vel_gain = 0.2
 
             return_to_heading_gain = (2.0*abs(avg_gain))/(abs(relative_gain)+1)
             return_to_line_gain = abs(relative_gain)*return_to_heading_gain
 
-            ang_vel = next_goal.twist.twist.angular.z - return_to_heading_gain*heading  - return_to_line_gain*off
-        return self.check_angular_limits(odom, ang_vel)
+            ang_vel = des_ang_vel_gain * next_goal.twist.twist.angular.z - return_to_heading_gain*heading  - return_to_line_gain*off
+
+        return ang_vel
+        # return self.check_angular_limits(odom, ang_vel)
 
     def calc_linear_velocity(self, along, off, angular_vel, goal_vel, odom):
         linear_vel = goal_vel
