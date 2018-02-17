@@ -2,113 +2,202 @@ waypoints:
   # Figure-8 for ShowCASE Demo
   # CW Circle
   - {x: 4.0, y: 1.5, v: 0.5, heading: rad(-pi/2.0), frame: 'map', direction: 1}
+  - {x: 3.633883477, y: 0.616116523, v: 0.5, heading: rad(-3*pi/4), frame: 'map', direction: 1}
   - {x: 2.75, y: 0.25, v: 0.5, heading: rad(pi), frame: 'map', direction: 1}
+  - {x: 1.866116523, y: 0.616116523, v: 0.5, heading: rad(3*pi/4), frame: 'map', direction: 1}
   - {x: 1.5, y: 1.5, v: 0.5, heading: rad(pi/2.0), frame: 'map', direction: 1}
+  - {x: 1.866116523, y: 2.383883477, v: 0.5, heading: rad(pi/4), frame: 'map', direction: 1}
   - {x: 2.75, y: 2.75, v: 0.5, heading: rad(0.0), frame: 'map', direction: 1}
+  - {x: 3.633883477, y: 2.383883477, v: 0.5, heading: rad(-pi/4), frame: 'map', direction: 1}
   # CCW Circle
   - {x: 4.0, y: 1.5, v: 0.5, heading: rad(-pi/2.0), frame: 'map', direction: 1}
+  - {x: 4.366116523, y: 0.616116523, v: 0.5, heading: rad(-pi/4), frame: 'map', direction: 1}
   - {x: 5.25, y: 0.25, v: 0.5, heading: rad(0.0), frame: 'map', direction: 1}
+  - {x: 6.133883477, y: 0.616116523, v: 0.5, heading: rad(pi/4), frame: 'map', direction: 1}
   - {x: 6.5, y: 1.5, v: 0.5, heading: rad(pi/2.0), frame: 'map', direction: 1}
+  - {x: 6.133883477, y: 2.383883477, v: 0.5, heading: rad(3*pi/4), frame: 'map', direction: 1}
   - {x: 5.25, y: 2.75, v: 0.5, heading: rad(pi), frame: 'map', direction: 1}
+  - {x: 4.366116523, y: 2.383883477, v: 0.5, heading: rad(-3*pi/4), frame: 'map', direction: 1}
   # CW Circle
   - {x: 4.0, y: 1.5, v: 0.5, heading: rad(-pi/2.0), frame: 'map', direction: 1}
+  - {x: 3.633883477, y: 0.616116523, v: 0.5, heading: rad(-3*pi/4), frame: 'map', direction: 1}
   - {x: 2.75, y: 0.25, v: 0.5, heading: rad(pi), frame: 'map', direction: 1}
+  - {x: 1.866116523, y: 0.616116523, v: 0.5, heading: rad(3*pi/4), frame: 'map', direction: 1}
   - {x: 1.5, y: 1.5, v: 0.5, heading: rad(pi/2.0), frame: 'map', direction: 1}
+  - {x: 1.866116523, y: 2.383883477, v: 0.5, heading: rad(pi/4), frame: 'map', direction: 1}
   - {x: 2.75, y: 2.75, v: 0.5, heading: rad(0.0), frame: 'map', direction: 1}
+  - {x: 3.633883477, y: 2.383883477, v: 0.5, heading: rad(-pi/4), frame: 'map', direction: 1}
   # CCW Circle
   - {x: 4.0, y: 1.5, v: 0.5, heading: rad(-pi/2.0), frame: 'map', direction: 1}
+  - {x: 4.366116523, y: 0.616116523, v: 0.5, heading: rad(-pi/4), frame: 'map', direction: 1}
   - {x: 5.25, y: 0.25, v: 0.5, heading: rad(0.0), frame: 'map', direction: 1}
+  - {x: 6.133883477, y: 0.616116523, v: 0.5, heading: rad(pi/4), frame: 'map', direction: 1}
   - {x: 6.5, y: 1.5, v: 0.5, heading: rad(pi/2.0), frame: 'map', direction: 1}
+  - {x: 6.133883477, y: 2.383883477, v: 0.5, heading: rad(3*pi/4), frame: 'map', direction: 1}
   - {x: 5.25, y: 2.75, v: 0.5, heading: rad(pi), frame: 'map', direction: 1}
+  - {x: 4.366116523, y: 2.383883477, v: 0.5, heading: rad(-3*pi/4), frame: 'map', direction: 1}
   # CW Circle
   - {x: 4.0, y: 1.5, v: 0.5, heading: rad(-pi/2.0), frame: 'map', direction: 1}
+  - {x: 3.633883477, y: 0.616116523, v: 0.5, heading: rad(-3*pi/4), frame: 'map', direction: 1}
   - {x: 2.75, y: 0.25, v: 0.5, heading: rad(pi), frame: 'map', direction: 1}
+  - {x: 1.866116523, y: 0.616116523, v: 0.5, heading: rad(3*pi/4), frame: 'map', direction: 1}
   - {x: 1.5, y: 1.5, v: 0.5, heading: rad(pi/2.0), frame: 'map', direction: 1}
+  - {x: 1.866116523, y: 2.383883477, v: 0.5, heading: rad(pi/4), frame: 'map', direction: 1}
   - {x: 2.75, y: 2.75, v: 0.5, heading: rad(0.0), frame: 'map', direction: 1}
-  # CCW Circle
+  - {x: 3.633883477, y: 2.383883477, v: 0.5, heading: rad(-pi/4), frame: 'map', direction: 1}
+    # CCW Circle
   - {x: 4.0, y: 1.5, v: 0.5, heading: rad(-pi/2.0), frame: 'map', direction: 1}
+  - {x: 4.366116523, y: 0.616116523, v: 0.5, heading: rad(-pi/4), frame: 'map', direction: 1}
   - {x: 5.25, y: 0.25, v: 0.5, heading: rad(0.0), frame: 'map', direction: 1}
+  - {x: 6.133883477, y: 0.616116523, v: 0.5, heading: rad(pi/4), frame: 'map', direction: 1}
   - {x: 6.5, y: 1.5, v: 0.5, heading: rad(pi/2.0), frame: 'map', direction: 1}
+  - {x: 6.133883477, y: 2.383883477, v: 0.5, heading: rad(3*pi/4), frame: 'map', direction: 1}
   - {x: 5.25, y: 2.75, v: 0.5, heading: rad(pi), frame: 'map', direction: 1}
+  - {x: 4.366116523, y: 2.383883477, v: 0.5, heading: rad(-3*pi/4), frame: 'map', direction: 1}
   # CW Circle
   - {x: 4.0, y: 1.5, v: 0.5, heading: rad(-pi/2.0), frame: 'map', direction: 1}
+  - {x: 3.633883477, y: 0.616116523, v: 0.5, heading: rad(-3*pi/4), frame: 'map', direction: 1}
   - {x: 2.75, y: 0.25, v: 0.5, heading: rad(pi), frame: 'map', direction: 1}
+  - {x: 1.866116523, y: 0.616116523, v: 0.5, heading: rad(3*pi/4), frame: 'map', direction: 1}
   - {x: 1.5, y: 1.5, v: 0.5, heading: rad(pi/2.0), frame: 'map', direction: 1}
+  - {x: 1.866116523, y: 2.383883477, v: 0.5, heading: rad(pi/4), frame: 'map', direction: 1}
   - {x: 2.75, y: 2.75, v: 0.5, heading: rad(0.0), frame: 'map', direction: 1}
-  # CCW Circle
+  - {x: 3.633883477, y: 2.383883477, v: 0.5, heading: rad(-pi/4), frame: 'map', direction: 1}
+    # CCW Circle
   - {x: 4.0, y: 1.5, v: 0.5, heading: rad(-pi/2.0), frame: 'map', direction: 1}
+  - {x: 4.366116523, y: 0.616116523, v: 0.5, heading: rad(-pi/4), frame: 'map', direction: 1}
   - {x: 5.25, y: 0.25, v: 0.5, heading: rad(0.0), frame: 'map', direction: 1}
+  - {x: 6.133883477, y: 0.616116523, v: 0.5, heading: rad(pi/4), frame: 'map', direction: 1}
   - {x: 6.5, y: 1.5, v: 0.5, heading: rad(pi/2.0), frame: 'map', direction: 1}
+  - {x: 6.133883477, y: 2.383883477, v: 0.5, heading: rad(3*pi/4), frame: 'map', direction: 1}
   - {x: 5.25, y: 2.75, v: 0.5, heading: rad(pi), frame: 'map', direction: 1}
+  - {x: 4.366116523, y: 2.383883477, v: 0.5, heading: rad(-3*pi/4), frame: 'map', direction: 1}
   # CW Circle
   - {x: 4.0, y: 1.5, v: 0.5, heading: rad(-pi/2.0), frame: 'map', direction: 1}
+  - {x: 3.633883477, y: 0.616116523, v: 0.5, heading: rad(-3*pi/4), frame: 'map', direction: 1}
   - {x: 2.75, y: 0.25, v: 0.5, heading: rad(pi), frame: 'map', direction: 1}
+  - {x: 1.866116523, y: 0.616116523, v: 0.5, heading: rad(3*pi/4), frame: 'map', direction: 1}
   - {x: 1.5, y: 1.5, v: 0.5, heading: rad(pi/2.0), frame: 'map', direction: 1}
+  - {x: 1.866116523, y: 2.383883477, v: 0.5, heading: rad(pi/4), frame: 'map', direction: 1}
   - {x: 2.75, y: 2.75, v: 0.5, heading: rad(0.0), frame: 'map', direction: 1}
-  # CCW Circle
+  - {x: 3.633883477, y: 2.383883477, v: 0.5, heading: rad(-pi/4), frame: 'map', direction: 1}
+    # CCW Circle
   - {x: 4.0, y: 1.5, v: 0.5, heading: rad(-pi/2.0), frame: 'map', direction: 1}
+  - {x: 4.366116523, y: 0.616116523, v: 0.5, heading: rad(-pi/4), frame: 'map', direction: 1}
   - {x: 5.25, y: 0.25, v: 0.5, heading: rad(0.0), frame: 'map', direction: 1}
+  - {x: 6.133883477, y: 0.616116523, v: 0.5, heading: rad(pi/4), frame: 'map', direction: 1}
   - {x: 6.5, y: 1.5, v: 0.5, heading: rad(pi/2.0), frame: 'map', direction: 1}
+  - {x: 6.133883477, y: 2.383883477, v: 0.5, heading: rad(3*pi/4), frame: 'map', direction: 1}
   - {x: 5.25, y: 2.75, v: 0.5, heading: rad(pi), frame: 'map', direction: 1}
+  - {x: 4.366116523, y: 2.383883477, v: 0.5, heading: rad(-3*pi/4), frame: 'map', direction: 1}
   # CW Circle
   - {x: 4.0, y: 1.5, v: 0.5, heading: rad(-pi/2.0), frame: 'map', direction: 1}
+  - {x: 3.633883477, y: 0.616116523, v: 0.5, heading: rad(-3*pi/4), frame: 'map', direction: 1}
   - {x: 2.75, y: 0.25, v: 0.5, heading: rad(pi), frame: 'map', direction: 1}
+  - {x: 1.866116523, y: 0.616116523, v: 0.5, heading: rad(3*pi/4), frame: 'map', direction: 1}
   - {x: 1.5, y: 1.5, v: 0.5, heading: rad(pi/2.0), frame: 'map', direction: 1}
+  - {x: 1.866116523, y: 2.383883477, v: 0.5, heading: rad(pi/4), frame: 'map', direction: 1}
   - {x: 2.75, y: 2.75, v: 0.5, heading: rad(0.0), frame: 'map', direction: 1}
-  # CCW Circle
+  - {x: 3.633883477, y: 2.383883477, v: 0.5, heading: rad(-pi/4), frame: 'map', direction: 1}
+    # CCW Circle
   - {x: 4.0, y: 1.5, v: 0.5, heading: rad(-pi/2.0), frame: 'map', direction: 1}
+  - {x: 4.366116523, y: 0.616116523, v: 0.5, heading: rad(-pi/4), frame: 'map', direction: 1}
   - {x: 5.25, y: 0.25, v: 0.5, heading: rad(0.0), frame: 'map', direction: 1}
+  - {x: 6.133883477, y: 0.616116523, v: 0.5, heading: rad(pi/4), frame: 'map', direction: 1}
   - {x: 6.5, y: 1.5, v: 0.5, heading: rad(pi/2.0), frame: 'map', direction: 1}
+  - {x: 6.133883477, y: 2.383883477, v: 0.5, heading: rad(3*pi/4), frame: 'map', direction: 1}
   - {x: 5.25, y: 2.75, v: 0.5, heading: rad(pi), frame: 'map', direction: 1}
+  - {x: 4.366116523, y: 2.383883477, v: 0.5, heading: rad(-3*pi/4), frame: 'map', direction: 1}
   # CW Circle
   - {x: 4.0, y: 1.5, v: 0.5, heading: rad(-pi/2.0), frame: 'map', direction: 1}
+  - {x: 3.633883477, y: 0.616116523, v: 0.5, heading: rad(-3*pi/4), frame: 'map', direction: 1}
   - {x: 2.75, y: 0.25, v: 0.5, heading: rad(pi), frame: 'map', direction: 1}
+  - {x: 1.866116523, y: 0.616116523, v: 0.5, heading: rad(3*pi/4), frame: 'map', direction: 1}
   - {x: 1.5, y: 1.5, v: 0.5, heading: rad(pi/2.0), frame: 'map', direction: 1}
+  - {x: 1.866116523, y: 2.383883477, v: 0.5, heading: rad(pi/4), frame: 'map', direction: 1}
   - {x: 2.75, y: 2.75, v: 0.5, heading: rad(0.0), frame: 'map', direction: 1}
+  - {x: 3.633883477, y: 2.383883477, v: 0.5, heading: rad(-pi/4), frame: 'map', direction: 1}
   # CCW Circle
   - {x: 4.0, y: 1.5, v: 0.5, heading: rad(-pi/2.0), frame: 'map', direction: 1}
+  - {x: 4.366116523, y: 0.616116523, v: 0.5, heading: rad(-pi/4), frame: 'map', direction: 1}
   - {x: 5.25, y: 0.25, v: 0.5, heading: rad(0.0), frame: 'map', direction: 1}
+  - {x: 6.133883477, y: 0.616116523, v: 0.5, heading: rad(pi/4), frame: 'map', direction: 1}
   - {x: 6.5, y: 1.5, v: 0.5, heading: rad(pi/2.0), frame: 'map', direction: 1}
+  - {x: 6.133883477, y: 2.383883477, v: 0.5, heading: rad(3*pi/4), frame: 'map', direction: 1}
   - {x: 5.25, y: 2.75, v: 0.5, heading: rad(pi), frame: 'map', direction: 1}
+  - {x: 4.366116523, y: 2.383883477, v: 0.5, heading: rad(-3*pi/4), frame: 'map', direction: 1}
   # CW Circle
   - {x: 4.0, y: 1.5, v: 0.5, heading: rad(-pi/2.0), frame: 'map', direction: 1}
+  - {x: 3.633883477, y: 0.616116523, v: 0.5, heading: rad(-3*pi/4), frame: 'map', direction: 1}
   - {x: 2.75, y: 0.25, v: 0.5, heading: rad(pi), frame: 'map', direction: 1}
+  - {x: 1.866116523, y: 0.616116523, v: 0.5, heading: rad(3*pi/4), frame: 'map', direction: 1}
   - {x: 1.5, y: 1.5, v: 0.5, heading: rad(pi/2.0), frame: 'map', direction: 1}
+  - {x: 1.866116523, y: 2.383883477, v: 0.5, heading: rad(pi/4), frame: 'map', direction: 1}
   - {x: 2.75, y: 2.75, v: 0.5, heading: rad(0.0), frame: 'map', direction: 1}
+  - {x: 3.633883477, y: 2.383883477, v: 0.5, heading: rad(-pi/4), frame: 'map', direction: 1}
   # CCW Circle
   - {x: 4.0, y: 1.5, v: 0.5, heading: rad(-pi/2.0), frame: 'map', direction: 1}
+  - {x: 4.366116523, y: 0.616116523, v: 0.5, heading: rad(-pi/4), frame: 'map', direction: 1}
   - {x: 5.25, y: 0.25, v: 0.5, heading: rad(0.0), frame: 'map', direction: 1}
+  - {x: 6.133883477, y: 0.616116523, v: 0.5, heading: rad(pi/4), frame: 'map', direction: 1}
   - {x: 6.5, y: 1.5, v: 0.5, heading: rad(pi/2.0), frame: 'map', direction: 1}
+  - {x: 6.133883477, y: 2.383883477, v: 0.5, heading: rad(3*pi/4), frame: 'map', direction: 1}
   - {x: 5.25, y: 2.75, v: 0.5, heading: rad(pi), frame: 'map', direction: 1}
+  - {x: 4.366116523, y: 2.383883477, v: 0.5, heading: rad(-3*pi/4), frame: 'map', direction: 1}
   # CW Circle
   - {x: 4.0, y: 1.5, v: 0.5, heading: rad(-pi/2.0), frame: 'map', direction: 1}
+  - {x: 3.633883477, y: 0.616116523, v: 0.5, heading: rad(-3*pi/4), frame: 'map', direction: 1}
   - {x: 2.75, y: 0.25, v: 0.5, heading: rad(pi), frame: 'map', direction: 1}
+  - {x: 1.866116523, y: 0.616116523, v: 0.5, heading: rad(3*pi/4), frame: 'map', direction: 1}
   - {x: 1.5, y: 1.5, v: 0.5, heading: rad(pi/2.0), frame: 'map', direction: 1}
+  - {x: 1.866116523, y: 2.383883477, v: 0.5, heading: rad(pi/4), frame: 'map', direction: 1}
   - {x: 2.75, y: 2.75, v: 0.5, heading: rad(0.0), frame: 'map', direction: 1}
+  - {x: 3.633883477, y: 2.383883477, v: 0.5, heading: rad(-pi/4), frame: 'map', direction: 1}
   # CCW Circle
   - {x: 4.0, y: 1.5, v: 0.5, heading: rad(-pi/2.0), frame: 'map', direction: 1}
+  - {x: 4.366116523, y: 0.616116523, v: 0.5, heading: rad(-pi/4), frame: 'map', direction: 1}
   - {x: 5.25, y: 0.25, v: 0.5, heading: rad(0.0), frame: 'map', direction: 1}
+  - {x: 6.133883477, y: 0.616116523, v: 0.5, heading: rad(pi/4), frame: 'map', direction: 1}
   - {x: 6.5, y: 1.5, v: 0.5, heading: rad(pi/2.0), frame: 'map', direction: 1}
+  - {x: 6.133883477, y: 2.383883477, v: 0.5, heading: rad(3*pi/4), frame: 'map', direction: 1}
   - {x: 5.25, y: 2.75, v: 0.5, heading: rad(pi), frame: 'map', direction: 1}
+  - {x: 4.366116523, y: 2.383883477, v: 0.5, heading: rad(-3*pi/4), frame: 'map', direction: 1}
   # CW Circle
   - {x: 4.0, y: 1.5, v: 0.5, heading: rad(-pi/2.0), frame: 'map', direction: 1}
+  - {x: 3.633883477, y: 0.616116523, v: 0.5, heading: rad(-3*pi/4), frame: 'map', direction: 1}
   - {x: 2.75, y: 0.25, v: 0.5, heading: rad(pi), frame: 'map', direction: 1}
+  - {x: 1.866116523, y: 0.616116523, v: 0.5, heading: rad(3*pi/4), frame: 'map', direction: 1}
   - {x: 1.5, y: 1.5, v: 0.5, heading: rad(pi/2.0), frame: 'map', direction: 1}
+  - {x: 1.866116523, y: 2.383883477, v: 0.5, heading: rad(pi/4), frame: 'map', direction: 1}
   - {x: 2.75, y: 2.75, v: 0.5, heading: rad(0.0), frame: 'map', direction: 1}
+  - {x: 3.633883477, y: 2.383883477, v: 0.5, heading: rad(-pi/4), frame: 'map', direction: 1}
   # CCW Circle
   - {x: 4.0, y: 1.5, v: 0.5, heading: rad(-pi/2.0), frame: 'map', direction: 1}
+  - {x: 4.366116523, y: 0.616116523, v: 0.5, heading: rad(-pi/4), frame: 'map', direction: 1}
   - {x: 5.25, y: 0.25, v: 0.5, heading: rad(0.0), frame: 'map', direction: 1}
+  - {x: 6.133883477, y: 0.616116523, v: 0.5, heading: rad(pi/4), frame: 'map', direction: 1}
   - {x: 6.5, y: 1.5, v: 0.5, heading: rad(pi/2.0), frame: 'map', direction: 1}
+  - {x: 6.133883477, y: 2.383883477, v: 0.5, heading: rad(3*pi/4), frame: 'map', direction: 1}
   - {x: 5.25, y: 2.75, v: 0.5, heading: rad(pi), frame: 'map', direction: 1}
+  - {x: 4.366116523, y: 2.383883477, v: 0.5, heading: rad(-3*pi/4), frame: 'map', direction: 1}
   # CW Circle
   - {x: 4.0, y: 1.5, v: 0.5, heading: rad(-pi/2.0), frame: 'map', direction: 1}
+  - {x: 3.633883477, y: 0.616116523, v: 0.5, heading: rad(-3*pi/4), frame: 'map', direction: 1}
   - {x: 2.75, y: 0.25, v: 0.5, heading: rad(pi), frame: 'map', direction: 1}
+  - {x: 1.866116523, y: 0.616116523, v: 0.5, heading: rad(3*pi/4), frame: 'map', direction: 1}
   - {x: 1.5, y: 1.5, v: 0.5, heading: rad(pi/2.0), frame: 'map', direction: 1}
+  - {x: 1.866116523, y: 2.383883477, v: 0.5, heading: rad(pi/4), frame: 'map', direction: 1}
   - {x: 2.75, y: 2.75, v: 0.5, heading: rad(0.0), frame: 'map', direction: 1}
+  - {x: 3.633883477, y: 2.383883477, v: 0.5, heading: rad(-pi/4), frame: 'map', direction: 1}
   # CCW Circle
   - {x: 4.0, y: 1.5, v: 0.5, heading: rad(-pi/2.0), frame: 'map', direction: 1}
+  - {x: 4.366116523, y: 0.616116523, v: 0.5, heading: rad(-pi/4), frame: 'map', direction: 1}
   - {x: 5.25, y: 0.25, v: 0.5, heading: rad(0.0), frame: 'map', direction: 1}
+  - {x: 6.133883477, y: 0.616116523, v: 0.5, heading: rad(pi/4), frame: 'map', direction: 1}
   - {x: 6.5, y: 1.5, v: 0.5, heading: rad(pi/2.0), frame: 'map', direction: 1}
+  - {x: 6.133883477, y: 2.383883477, v: 0.5, heading: rad(3*pi/4), frame: 'map', direction: 1}
   - {x: 5.25, y: 2.75, v: 0.5, heading: rad(pi), frame: 'map', direction: 1}
+  - {x: 4.366116523, y: 2.383883477, v: 0.5, heading: rad(-3*pi/4), frame: 'map', direction: 1}
   #back to start
   - {x: 4.0, y: 1.5, v: 0.5, heading: rad(-pi/2.0), frame: 'map', direction: 1}
+  
