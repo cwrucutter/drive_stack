@@ -1,13 +1,5 @@
 waypoints:
-  # single 'I':
-  # start
-  - {x: 1.65, y: 2, v: 0.5, heading: rad(rad(pi/2, direction: 1}, frame: 'map', direction: 1}
-            # start
-  - {x: 2, y: 2, v: 0.5, heading: rad(pi/2), frame: 'map', direction: 1}
-  - {x: 1.75, y: 3, v: 0.5, heading: rad(pi/2), frame: 'map', direction: 1}
-            # out 1
-  - {x: 1.75, y: 7, v: 0.5, heading: rad(pi/2), frame: 'map', direction: 1}
-            # back 1
-  - {x: 2.25, y: 7, v: 0.5, heading: rad(-pi/2), frame: 'map', direction: 1}
-            # back 2
-  - {x: 2.25, y: 2, v: 0.5, heading: rad(-pi/2), frame: 'map', direction: 1}
+  - {x: 1.0, y: 0.0, v: 0.5, heading: rad(pi/2), frame: 'map', direction: 1}
+  - {x: 1.0, y: 5.0, v: 0.5, heading: rad(pi/2), frame: 'map', direction: 1}
+  - {x: 2.0, y: 5.0, v: 0.5, heading: rad(-pi/2), frame: 'map', direction: 1}
+  - {x: 2.0, y: 0.0, v: 0.5, heading: rad(-pi/2), frame: 'map', direction: 1}
